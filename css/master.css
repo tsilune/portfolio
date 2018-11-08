@@ -1,0 +1,110 @@
+/* HEADER */
+nav {
+	display: flex;
+	flex-direction: center;
+	justify-content: space-between;
+	align-items: center;
+	opacity: 0;
+	transform: scale(0.9);
+}
+
+/* REALISATION */
+#realisation {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+}
+
+.projets {
+	position: relative;
+	width: 80%;
+	height: 60%;
+	display: flex;
+	flex-direction: column;
+}
+
+#backgroudFullSize {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.ligne {
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+	height: 33%;
+	width: 100%;
+}
+
+.projet {
+	flex: 1;
+	border: 1px solid black;
+}
+
+.p1 {
+	background-image: url(../img/back1.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.p2 {
+	background-image: url(../img/back2.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.p3 {
+	background-image: url(../img/back3.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.p4 {
+	background-image: url(../img/back4.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.p5 {
+	background-image: url(../img/back5.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.p6 {
+	background-image: url(../img/back6.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.p7 {
+	background-image: url(../img/back7.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.p8 {
+	background-image: url(../img/back8.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.p9 {
+	background-image: url(../img/back9.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
