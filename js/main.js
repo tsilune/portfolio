@@ -75,6 +75,7 @@ var all_containerProjet = document.querySelectorAll('.modal');
 
 all_boutonProjet.forEach(function(boutonProjet) {
 	boutonProjet.addEventListener('click', function() {
+		body.classList.toggle('visible');
 		var num_projet = boutonProjet.dataset.projet;
 		var mySlider = document.querySelector('#' + num_projet);
 		all_containerProjet.forEach(function(containerProjet) {
@@ -84,6 +85,7 @@ all_boutonProjet.forEach(function(boutonProjet) {
 				// CROIX //
 				var cross = document.querySelector('#' + num_projet + ' ' + '.cross');
 				cross.addEventListener('click', function() {
+					body.classList.toggle('visible');
 					containerProjet.classList.remove('visible');
 				});
 				// FIN CROIX //
