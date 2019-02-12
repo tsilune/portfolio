@@ -19,6 +19,9 @@ var titre = document.querySelectorAll('.title');
 // TODO: commente ton code!!!!
 projects.forEach(function(p) {
 	p.addEventListener('mouseover', function() {
+		titre.forEach(function(ti) {
+			ti.style.opacity = 1;
+		})
 		var current = p.dataset.project;
 		bgs.forEach(function(b) {
 			if (b.dataset.project === current) bgsContainer.style.backgroundImage = 'url(' + b.src + ')';
@@ -32,6 +35,9 @@ projects.forEach(function(p) {
 
 mosaique.addEventListener('mouseleave', function() {
 	projects.forEach(function(p) {
+		titre.forEach(function(ti) {
+			ti.style.opacity = 0;
+		})
 		p.style.opacity = 1;
 	});
 });
