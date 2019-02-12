@@ -464,12 +464,13 @@ body.visible {
 	position: absolute;
 	top: 0;
 	left: 0;
-	opacity: 0.5;
 	background-color: black;
+	opacity: 0.1;
 }
 
 .case:hover .voile {
 	background-color: #ffb400;
+	opacity: 0.5;
 }
 
 #project_1 {
