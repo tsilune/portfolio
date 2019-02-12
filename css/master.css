@@ -502,7 +502,7 @@ body.visible {
 }
 
 #project_5 {
-	background-image: url('../img/back5.png');
+	background-image: url('../img/back5.jpg');
 	background-size: cover;
 }
 
@@ -945,6 +945,55 @@ video {
 	text-align: center;
 }
 
+#projet_4 .sle3 h1 {
+	margin: auto;
+	text-align: center;
+}
+
+.ordi {
+	margin: auto;
+	width: 85%;
+	height: 85%;
+	background-image: url('../img/ordi.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+
+.iphoneFull {
+	margin: auto;
+	width: 85%;
+	height: 85%;
+	background-image: url('../img/iphone.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+
+#video_6 {
+	left: 17%;
+}
+
+#projet_4 a {
+	color: #b24242;
+	font-weight: bold;
+}
+
+.video_ordi {
+	position: absolute;
+	top: 18%;
+	left: 23%;
+	width: 50%;
+	height: 50%;
+	z-index: 5;
+}
+
+.white {
+	color: white;
+}
+
 footer {
 	min-height: 100vh;
 	display: flex;
@@ -978,7 +1027,7 @@ footer main {
 	display: flex;
 }
 
-.map {
+/* .map {
 	flex: 2;
 	display: flex;
 }
@@ -995,38 +1044,92 @@ footer main {
 iframe {
 	width: 100%;
 	height: 100%;
-}
-
+} */
 .contactez-moi {
-	height: 100%;
-	flex: 2;
+	margin: auto;
+	height: 80%;
+	width: 80%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	text-align: center;
 }
 
 .contactez-moi p {
 	margin: auto;
+	font-size: 2em;
 }
 
 .pictos {
+	margin: auto;
 	height: 50%;
+	width: 80%;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
+}
+
+.pictos a {
+	width: 40%;
+	height: 40%;
 }
 
 .tel {
 	background-image: url('../img/smartphone.png');
+	height: 100%;
+	width: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	cursor: pointer;
+}
+
+.tel::after {
+	position: absolute;
+	content: '06 41 81 36 22';
+	bottom: -50%;
+	left: 34%;
+	text-align: center;
+	opacity: 0;
+}
+
+.tel:hover::after {
+	opacity: 1;
 }
 
 .lk {
 	background-image: url('../img/linkedin.png');
+	height: 100%;
+	width: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	cursor: pointer;
 }
 
 .mail {
 	background-image: url('../img/gmail.png');
+	height: 100%;
+	width: 100%;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	cursor: pointer;
+}
+
+.mail::after {
+	position: absolute;
+	content: 'tsilune@gmail.com';
+	bottom: -50%;
+	left: 24%;
+	text-align: center;
+	opacity: 0;
+}
+
+.mail:hover::after {
+	opacity: 1;
 }
 
 .contact h1 {

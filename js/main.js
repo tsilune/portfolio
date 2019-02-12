@@ -100,7 +100,7 @@ all_boutonProjet.forEach(function(boutonProjet) {
 						if (window.matchMedia('(prefers-reduced-motion)').matches) {
 							video.removeAttribute("autoplay");
 							video.pause();
-							pauseButton.innerHTML = "Pause";
+							pause.innerHTML = "Pause";
 						}
 
 						video.addEventListener('ended', function() {
