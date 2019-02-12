@@ -88,7 +88,7 @@ all_boutonProjet.forEach(function(boutonProjet) {
 				var left = document.querySelector('#' + num_projet + ' ' + '.arrow_left');
 				var index = 0;
 				right.addEventListener('click', function() {
-					if (index > -200) {
+					if (index > -300) {
 						index -= 100;
 						slider.style.transform = 'translateX(' + index + '%)';
 					};
