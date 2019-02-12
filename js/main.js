@@ -88,6 +88,44 @@ all_boutonProjet.forEach(function(boutonProjet) {
 				});
 				// FIN CROIX //
 
+
+				var pauseButton = document.querySelectorAll('#' + num_projet + ' ' + '.pause');
+
+
+				pauseButton.forEach(function(pause) {
+					var numPause = pause.dataset.pause;
+					var vi = document.querySelectorAll('#' + num_projet + ' ' + '#' + numPause + ' ' + '.vid');
+					vi.forEach(function(video) {
+
+						if (window.matchMedia('(prefers-reduced-motion)').matches) {
+							video.removeAttribute("autoplay");
+							video.pause();
+							pauseButton.innerHTML = "Pause";
+						}
+
+						video.addEventListener('ended', function() {
+							// only functional if "loop" is removed
+							video.pause();
+							// to capture IE10
+						})
+
+						pause.addEventListener("click", function() {
+							if (video.paused) {
+								video.play();
+								pause.innerHTML = "Play";
+							} else {
+								video.pause();
+								pause.innerHTML = "Pause";
+							}
+						})
+					})
+				});
+
+
+
+
+
+
 				// SLIDER //
 				var slider = document.querySelector('#' + num_projet + ' ' + '.slider');
 				var right = document.querySelector('#' + num_projet + ' ' + '.arrow_right');
