@@ -5,49 +5,87 @@
 	<meta charset="utf-8">
 	<title>Tsilune Ruttner - Portfolio</title>
 	<link rel="stylesheet" href="css/master.css">
-	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Oswald" rel="stylesheet">
 	<meta name="viewport" content="width=devicewidth; initial-scale=1;" />
 </head>
 
 <body>
-	<header>
-		<div id="header">
-			<aside class="navBar">
-				<div class="navCat"><a href="">À PROPOS</a></div>
-				<div class="navCat"><a href="">COMPÉTENCES</a></div>
-				<a href="">
-					<div class="logo"></div>
-				</a>
-				<div class="navCat"><a href="">RÉALISATIONS</a></div>
-				<div class="navCat"><a href="">CONTACT</a></div>
-			</aside>
+	<header id="apropos">
+		<div class="menu">
+			<nav>
+				<ul>
+					<li><a class="ancre" href="#apropos">À propos</a></li>
+					<!-- <li><a class="ancre" href="#parcours">Mon parcours</a></li>
+					<li><a class="ancre" href="#competences">Mes compétences</a></li> -->
+					<li><a class="ancre" href="#realisations">Mes réalisations</a></li>
+					<li><a class="ancre" href="#contact">Contact</a></li>
+				</ul>
+			</nav>
 		</div>
-		<div class="burgerMenu">
-			<div class="top"></div>
-			<div class="center"></div>
-			<div class="bottom"></div>
-		</div>
+		<main>
+			<div class="gauche">
+				<div class="pp">
 
-		<nav class="navModal">
-			<div class="wrapper">
-				<div class=""><a href="">ACCUEIL</a></div>
-				<div class=""><a href="">À PROPOS</a></div>
-				<div class=""><a href="">COMPÉTENCES</a></div>
-				<div class=""><a href="">RÉALISATIONS</a></div>
-				<div class=""><a href="">CONTACT</a></div>
+				</div>
+				<div class="burgerMenu">
+					<div class="top"></div>
+					<div class="center"></div>
+					<div class="bottom"></div>
+				</div>
 			</div>
-		</nav>
+			<div class="droite">
+				<article class="txt-p">
+					<div class="logo"></div>
+
+					<h1>Je suis Tsilune Ruttner ! </h1>
+					<p>Étudiant à l'ECV Digital de Nantes, je suis actuellement en préparation d'un Bachelor chef de projet digital. <br>
+						Grâce à mes 3 années d'études, j'ai développé de nombreuses compétences dans les métiers du multimédia et de l'Internet. <p>
+							<p>Ce que je préfère ? C'est l'UX et la communication ! Si vous voulez en apprendre plus sur moi, je vous invite à consulter mon CV !</p> <br>
+							<a href="/img/cv-tsilune-ruttner.pdf" class="cta">
+								<span>Consulter mon CV</span>
+								<svg width="13px" height="10px" viewBox="0 0 13 10">
+									<path d="M1,5 L11,5"></path>
+									<polyline points="8 1 12 5 8 9"></polyline>
+								</svg>
+							</a>
+
+				</article>
+			</div>
+		</main>
+
+
+
+
+
+
+
 	</header>
 
+	<!-- <section id="parcours">
+		<h1>Mon parcours</h1>
+		<main>
+			<div class="chrono">
+				<div class="axe"></div>
+				<div class="balls">
+					<div class="boule"></div>
+					<div class="boule"></div>
+					<div class="boule"></div>
+					<div class="boule"></div>
+				</div>
+				<div class="legend">
+
+				</div>
+
+			</div>
+		</main>
+	</section> -->
 
 
-
-
-	<main>
-		<section>
-
-		</section>
-		<section id="realisation">
+	<section id="realisations">
+		<div class="titre">
+			<h1>MES RÉALISATIONS</h1>
+		</div>
+		<main>
 			<div class="mosaique">
 				<div class="bgs">
 					<img src="img/back1.png" data-project="1" alt="">
@@ -55,68 +93,321 @@
 					<img src="img/back3.png" data-project="3" alt="">
 					<img src="img/back4.png" data-project="4" alt="">
 					<img src="img/back5.png" data-project="5" alt="">
-					<img src="img/back5.png" data-project="6" alt="">
+					<img src="img/back6.png" data-project="6" alt="">
 					<div class="voile"></div>
 				</div>
-				<div class="projects">
-					<aside class="row">
-						<div id="projet_1" class="case" data-project="1">
-							<img src="img/back1.png" alt="">
+				<div class="projects row">
+					<article class="pj pj1" data-projet="projet_1">
+						<div id="project_1" class="case bgd" data-project="1">
+
 							<div class="voile"></div>
 							<div class="title">
-								titre
+								<h2>JO 2024</h2>
 							</div>
 						</div>
-						<div id="projet_2" class="case" data-project="2">
-							<img src="img/back2.png" alt="">
-							<div class="voile"></div>
-							<div class="title">
-								titre
+					</article>
+					<article class="gr gr1 column">
+						<div class="pj pj2" data-projet="projet_2">
+							<div id="project_2" class="case" data-project="2">
+
+								<div class="voile"></div>
+								<div class="title">
+									<h2>Pêche à pied responsable</h2>
+								</div>
 							</div>
 						</div>
-						<div id="projet_3" class="case" data-project="3">
-							<img src="img/back3.png" alt="">
-							<div class="voile"></div>
-							<div class="title">
-								titre
+						<div class="gr gr2 row">
+							<div class="pj pj3" data-projet="projet_3">
+								<div id="project_3" class="case" data-project="3">
+
+									<div class="voile"></div>
+									<div class="title">
+										<h2>Weneed</h2>
+									</div>
+								</div>
+							</div>
+							<div class="gr gr3 column">
+								<div class="pj pj4" data-projet="projet_4">
+									<div id="project_4" class="case" data-project="4">
+
+										<div class="voile"></div>
+										<div class="title">
+											<h2>Le slip Français</h2>
+										</div>
+									</div>
+								</div>
+								<div class="gr gr4 row">
+									<div class="pj pj5" data-projet="projet_5">
+										<div id="project_5" class="case" data-project="5">
+
+											<div class="voile"></div>
+											<div class="title">
+												titre
+											</div>
+										</div>
+									</div>
+									<div class="pj pj6" data-projet="projet_6">
+										<div id="project_6" class="case" data-project="6">
+
+											<div class="voile"></div>
+											<div class="title">
+												titre
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-					</aside>
-					<aside class="row">
-						<div id="projet_4" class="case" data-project="4">
-							<img src="img/back4.png" alt="">
-							<div class="voile"></div>
-							<div class="title">
-								titre
+					</article>
+				</div>
+			</div>
+			<aside class="bloc b1"></aside>
+		</main>
+
+		<!-- **************
+******MODALS******
+************** -->
+
+		<div id="projet_1" class="modal">
+			<div class="wrapper">
+				<div class="slider">
+					<div class="slide ">
+						<div class="texte">
+							<h1>Workshop - Jeux Olympiques 2024</h1>
+							<h2>Contexte :</h2>
+							<p>Ce travail a été crée à l’occasion d’un workshop de 3 jours d’UX, en équipe de 3. La demande avait pour objet la refonte de la marque-mère des Jeux Olympiques. <br>
+								Il était donc question, dans un premier temps, de concevoir l’identité visuelle des jeux olympiques de Paris 2024. <br> Dans un second, il fallait mettre en place un processus ergonomique afin de cibler les utilisateurs potentiels et
+								produire les
+								outils nécessaires permettant de promouvoir et répondre à cet événement pendant et avant manifestation.<br> Dans un troisième temps, il fallait convevoir les déclinaisons de cette dernière sur tout types de supports jugés nécessaires. </p>
+							<p>Nous avons choisis de créer une application. Vous pouvez lancer la vidéo de navigation dans les écrans sur le support à côté. <br>
+								Tous les écrans ni toutes les fonctionnalités n'ont été développés en raison du peu de temps dont nous disposions.</p>
+						</div>
+						<div class="iphone">
+							<div class="video">
+								<video onload="" class="vid" loop>
+									<source id="videoDebut" src="img/jo.mp4" type="video/mp4">
+								</video>
+
+							</div>
+							<div class="pause">
+								Play
 							</div>
 						</div>
-						<div id="projet_5" class="case" data-project="5">
-							<img src="img/back5.png" alt="">
-							<div class="voile"></div>
-							<div class="title">
-								titre
+					</div>
+					<div class="slide ">
+						<div class="texte">
+							<h1>Workshop - Jeux Olympiques 2024</h1>
+							<h2>Création du logo</h2>
+							<p>Pour représenter les JO, nous avons choisis de nous appuyer sur une figure mythique des Jeux datant de la grèce Antique : le Discobole de Myron. L’idée était de montrer que les Jeux sont existent depuis très longtemps, et même s’ils ont
+								été modernisé, les valeurs n’ont pas changé. <br>
+								Le fait d’être le pays accueillant les Jeux Olympique est quelque chose de politiquement très important. C’est à ce moment qu’un pays peut se mettre en avant. Il fallait donc que notre logo reprenne des symboles français, sans pour autant
+								qu’il soit nationalisé. Nous avons donc choisi de prendre la forme hexagonal, représentative de la France. Également, nous avons utilisé les couleurs bleu-blanc-rouge sous forme de dégradé.</p>
+							<p>Nous voulions centrer les jeux autour de la thématique environnemental, qui est et sera toujours un enjeu majeur de notre société. Ainsi, nous avons mis en scène le personnage de la statut de Myron, tirant la terre avec lui. <br>
+								Le but étant de faire comprendre que le personnage amène la terre avec lui, la fait avancer, et que c’est notre devoir d’avancer pour notre planète. <p>
+
+						</div>
+						<div class="content">
+							<div class="crealogojo"></div>
+							<div class="logojo"></div>
+
+
+						</div>
+					</div>
+					<div class="slide sle3 ">
+						<div class="goodies">
+							<h1>Création de goodies</h1>
+							<p>Pour conclure, nous avons réalisés 3 goodies s'inscrivant dans notre démarche environnemental.</p>
+						</div>
+						<div class="layout">
+							<div class="gd1"></div>
+							<div class="gd2"></div>
+							<div class="gd3"></div>
+						</div>
+
+					</div>
+				</div>
+				<div class="arrow arrow_left">
+					<img src="img/fleche.svg" alt="">
+				</div>
+				<div class="arrow arrow_right">
+					<img src="img/flecheDroite.svg" alt="">
+				</div>
+				<div class="cross">
+					<img src="img/crossBlue.svg" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div id="projet_2" class="modal">
+			<div class="wrapper">
+				<div class="slider">
+					<div class="slide ">
+						<div class="texte">
+							<h1>La pêche à pied responsable</h1>
+							<h2>Objectif :</h2>
+							<p>En binome, nous devions nous atteler à la refonte du site internet <a href="www/pecheapied-responsable"></a>. <br>
+								Il fallait que sur le site on retrouve :
+								<ul>
+									<li>Des informations cartographiques sur la qualité bactériologique suivant les lieux</li>
+									<li>L'information sur la présence d'interdictions temporaires de pêche</li>
+									<li>Des informations générales sur les risques sanitaires ainsi que sur les réglementations liés aux usages de la pêche à pied loisir.</li>
+								</ul>
+								<br> Pour créer une plateforme qui convienne à l'utilisateur, nous avons mené des enquêtes physiques et via Facebook qui nous ont menées à des personas présents sur la prochaine slide.
+								<br> Nous avons également choisi de refaire un logo que vous pourrez trouver sur la dernière slide. <br>
+								En attendant, vous avez ici les écrans de la version mobile que j'ai réalisée. Encore une fois, tous les écrans et toutes les fonctionnalités n'ont pas été crées.
+							</p>
+						</div>
+						<div class="iphone">
+							<div class="video">
+								<video onload="" class="vid" loop>
+									<source id="videoDebut" src="img/pap.mp4" type="video/mp4">
+								</video>
+
+							</div>
+							<div class="pause">
+								Play
 							</div>
 						</div>
-						<div id="projet_6" class="case" data-project="6">
-							<img src="img/back6.png" alt="">
-							<div class="voile"></div>
-							<div class="title">
-								titre
-							</div>
+					</div>
+					<div class="slide "></div>
+					<div class="slide sle3">
+						<div class="logospap">
+							<h1>Création du logo</h1>
+							<p>Cette étape n'est pas obligatoire, mais nous avons choisi de tout de même créer un nouveau logo. <br>
+								On pourrait croire qu'il n'est pas complet car il y a seulement écrit responsable, mais le logo du site actuel comprend également cette unique appelation. </p>
 						</div>
-					</aside>
+						<div class="layout space">
+							<div class="prelogo"></div>
+							<div class="currentlogo"></div>
+						</div>
+					</div>
 
 				</div>
-				<div class="trait th t1"></div>
-				<div class="trait th t2"></div>
-				<div class="trait tv t3"></div>
-				<div class="trait tv t4"></div>
-				<div class="trait tv t5"></div>
+				<div class="arrow arrow_left">
+					<img src="img/fleche.svg" alt="">
+				</div>
+				<div class="arrow arrow_right">
+					<img src="img/flecheDroite.svg" alt="">
+				</div>
+				<div class="cross">
+					<img src="img/crossBlue.svg" alt="">
+				</div>
 			</div>
-		</section>
-	</main>
-	<footer></footer>
+		</div>
+
+		<div id="projet_3" class="modal">
+			<div class="wrapper">
+				<div class="slider">
+					<div class="slide "></div>
+					<div class="slide "></div>
+					<div class="slide "></div>
+				</div>
+				<div class="arrow arrow_left">
+					<img src="img/fleche.svg" alt="">
+				</div>
+				<div class="arrow arrow_right">
+					<img src="img/flecheDroite.svg" alt="">
+				</div>
+				<div class="cross">
+					<img src="img/crossBlue.svg" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div id="projet_4" class="modal">
+			<div class="wrapper">
+				<div class="slider">
+					<div class="slide "></div>
+					<div class="slide "></div>
+					<div class="slide "></div>
+				</div>
+				<div class="arrow arrow_left">
+					<img src="img/fleche.svg" alt="">
+				</div>
+				<div class="arrow arrow_right">
+					<img src="img/flecheDroite.svg" alt="">
+				</div>
+				<div class="cross">
+					<img src="img/crossBlue.svg" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div id="projet_5" class="modal">
+			<div class="wrapper">
+				<div class="slider">
+					<div class="slide "></div>
+					<div class="slide "></div>
+					<div class="slide "></div>
+				</div>
+				<div class="arrow arrow_left">
+					<img src="img/fleche.svg" alt="">
+				</div>
+				<div class="arrow arrow_right">
+					<img src="img/flecheDroite.svg" alt="">
+				</div>
+				<div class="cross">
+					<img src="img/crossBlue.svg" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div id="projet_6" class="modal">
+			<div class="wrapper">
+				<div class="slider">
+					<div class="slide "></div>
+					<div class="slide "></div>
+					<div class="slide "></div>
+				</div>
+				<div class="arrow arrow_left">
+					<img src="img/fleche.svg" alt="">
+				</div>
+				<div class="arrow arrow_right">
+					<img src="img/flecheDroite.svg" alt="">
+				</div>
+				<div class="cross">
+					<img src="img/crossBlue.svg" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div class="backgroundReal"></div>
+	</section>
+	<footer id="contact">
+		<div class="titre">
+			<h1>CONTACT</h1>
+		</div>
+		<main class="centre">
+			<div class="fiche">
+				<div class="map">
+					<div class="carte">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2710.51848831773!2d-1.556601484388356!3d47.20643637916023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805eeac7f36f86b%3A0x3d644e6168d073c8!2s15+Rue+la+Tour+d&#39;Auvergne%2C+44200+Nantes!5e0!3m2!1sfr!2sfr!4v1549208456550"
+						 width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="contactez-moi">
+					<p>Vous avez besoin d'un UX Designer ? Alors n'hésitez plus, entrez en contact avec moi</p>
+					<div class="pictos">
+						<div class="tel">
+
+						</div>
+						<div class="lk">
+
+						</div>
+						<div class="mail">
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<aside class="bloc b2"></aside>
+		</main>
+
+
+	</footer>
+	<script src="js/noframework.waypoints.min.js" charset="utf-8"></script>
 	<script src="js/main.js" charset="utf-8"></script>
+	<script src="js/pause_button.js" charset="utf-8"></script>
 </body>
 
 </html>
