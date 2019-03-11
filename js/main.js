@@ -16,19 +16,27 @@ var projects = document.querySelectorAll('.case');
 var mosaique = document.querySelector('.mosaique');
 var titre = document.querySelectorAll('.title');
 
-// TODO: commente ton code!!!!
+// Gestion de l'effet des projets en hover
 projects.forEach(function(p) {
 	p.addEventListener('mouseover', function() {
 		titre.forEach(function(ti) {
 			ti.style.opacity = 1;
+			ti.style.transition = 'opacity 1000ms';
 		})
 		var current = p.dataset.project;
 		bgs.forEach(function(b) {
-			if (b.dataset.project === current) bgsContainer.style.backgroundImage = 'url(' + b.src + ')';
+			if (b.dataset.project === current) {
+				bgsContainer.style.backgroundImage = 'url(' + b.src + ')';
+			}
 		});
 		projects.forEach(function(pp) {
-			if (pp !== p) pp.style.opacity = 0;
-			else pp.style.opacity = 1;
+			if (pp !== p) {
+				pp.style.opacity = 0;
+				pp.style.transition = 'opacity 1000ms';
+			} else {
+				pp.style.opacity = 1;
+				pp.style.transition = 'opacity 1000ms';
+			}
 		});
 	});
 });
@@ -37,8 +45,10 @@ mosaique.addEventListener('mouseleave', function() {
 	projects.forEach(function(p) {
 		titre.forEach(function(ti) {
 			ti.style.opacity = 0;
+			ti.style.transition = 'opacity 1000ms';
 		})
 		p.style.opacity = 1;
+		p.style.transition = 'opacity 1000ms';
 	});
 });
 

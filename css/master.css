@@ -224,6 +224,7 @@ body.visible {
 	height: 50px;
 	background-image: url(../img/pre-logo.png);
 	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 .cta {
@@ -1096,6 +1097,21 @@ iframe {
 	height: 40%;
 }
 
+.pictos a::before {
+	position: absolute;
+	content: 'click me !';
+	color: #df4d19;
+	top: 40%;
+	opacity: 0;
+	transform: scale(1) rotate(0);
+	transition: 0.6s;
+}
+
+.pictos a:hover::before {
+	opacity: 1;
+	transform: scale(1.2) rotate(360deg);
+}
+
 .tel {
 	background-image: url('../img/smartphone.png');
 	height: 100%;
@@ -1110,14 +1126,19 @@ iframe {
 .tel::after {
 	position: absolute;
 	content: '06 41 81 36 22';
-	bottom: -50%;
-	left: 34%;
+	bottom: -70%;
+	left: 10%;
 	text-align: center;
 	opacity: 0;
+	width: 100%;
+	font-size: 1.5em;
+	transform: scale(1);
+	transition: 1s;
 }
 
 .tel:hover::after {
 	opacity: 1;
+	transform: scale(1.2);
 }
 
 .lk {
@@ -1145,14 +1166,18 @@ iframe {
 .mail::after {
 	position: absolute;
 	content: 'tsilune@gmail.com';
-	bottom: -50%;
-	left: 24%;
+	bottom: -70%;
+	left: 2%;
 	text-align: center;
 	opacity: 0;
+	font-size: 1.5em;
+	transform: scale(1);
+	transition: 1s;
 }
 
 .mail:hover::after {
 	opacity: 1;
+	transform: scale(1.2);
 }
 
 .contact h1 {
